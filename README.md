@@ -1,16 +1,19 @@
 This is a simple REST API. It returns basic profile information and a random cat fact from an external API.
- How to Run Locally
+## How to Run Locally
 
-1. Clone the repo  
-   `git clone https://github.com/your-username/your-repo.git`
 
-2. Navigate into the project folder  
-   `cd your-repo`
+# Clone the repo
+git clone https://github.com/sparklynjewel/RonkeFastAPI.git
 
-3. Install dependencies  
-   `npm install` or `pip install -r requirements.txt`
+# Navigate to the folder
+cd RonkeFastAPI
 
-4. Start the server  
-   `npm start` or `python app.py`
+# Install dependencies
+pip install -r requirements.txt
 
-5. Visit `http://localhost:3000/me` or `http://127.0.0.1:5000/me`
+# Run the server
+uvicorn main:app --reload
+
+# Visit in browser
+http://127.0.0.1:8000/me
+
