@@ -17,3 +17,5 @@ uvicorn main:app --reload
 # Visit in browser
 http://127.0.0.1:8000/me
 
+# Visit in browser after deplying- add /me at the back fo the url
+https://ronkefastapi-production.up.railway.app/me
