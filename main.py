@@ -12,9 +12,9 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {"message": "Hello from Railway!"}
-@app.get("/me", summary="Get developer profile", tags=["Profile"])
 
-def get_profile():
+@app.get("/me")
+def read_me():
     try:
         response = requests.get("https://catfact.ninja/fact", timeout=5)
         response.raise_for_status()
@@ -35,4 +35,3 @@ def get_profile():
             "fact": cat_fact
         }
     )
-
