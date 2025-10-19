@@ -9,10 +9,10 @@ load_dotenv()
 
 app = FastAPI()
 
-@app.get("/me", summary="Get developer profile", tags=["Profile"])
-
+@app.get("/")
 def read_root():
     return {"message": "Hello from Railway!"}
+@app.get("/me", summary="Get developer profile", tags=["Profile"])
 
 def get_profile():
     try:
