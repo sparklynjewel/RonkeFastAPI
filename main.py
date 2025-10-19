@@ -10,6 +10,9 @@ load_dotenv()
 app = FastAPI()
 
 @app.get("/me", summary="Get developer profile", tags=["Profile"])
+def read_root():
+    return {"message": "Hello from Railway!"}
+
 def get_profile():
     try:
         response = requests.get("https://catfact.ninja/fact", timeout=5)
